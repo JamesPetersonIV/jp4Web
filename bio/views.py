@@ -34,6 +34,9 @@ class AutoBio(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'bio/about.html')
 
+class Home(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'bio/home.html')
 
 class TDCPortfolio(View):
     def get(self, request, *args, **kwargs):

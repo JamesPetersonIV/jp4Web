@@ -1,0 +1,45 @@
+{% extends 'bio/base.html'   %} 
+
+{% load static %}
+
+<!--content block-->
+{% block content %}
+<div class = "container-fluid" style="font-family: comic sans ms, cursive; color: white;">
+    <div class = "row">
+        <h1><b>NOVELS</b></h1>
+    </div>
+    <div class = "row">
+    {% for n in novels %}
+        <div class = "col-6">
+            <a href = "{% url 'read' n.pk %}">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ n.img.url }}" height="400in" width="400in">
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+<div class = "container-fluid" style="font-family: comic sans ms, cursive; color: white;">
+    <div class = "row">
+        <h1><b>COMIC BOOKS</b></h1>
+    </div>
+    <div class = "row">
+    {% for c in comics %}
+        <div class = "col-6">
+            <a href = "{% url 'read' c.pk %}">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ c.img.url }}" height="400in" width="400in">
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+<!--endblock content-->
+{% endblock content %}

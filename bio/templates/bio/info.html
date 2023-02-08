@@ -1,0 +1,22 @@
+{% extends 'bio/base.html'   %} 
+
+{% load static %}
+
+<!--content block-->
+{% block content %}
+<div class="container">
+    <div class = "row">
+            <figure class="figure text-center">
+                <img src="{{info.img.url}}" class="figure-img img-fluid rounded" alt="...">
+                <blockquote class="blockquote">
+                    <p>{{ info.name }}</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    {{info.entry}}; <cite title="Source Title">{{info.summary}}</cite>
+                </figcaption>
+            </figure>
+    </div>
+</div>
+
+<!--endblock content-->
+{% endblock content %}

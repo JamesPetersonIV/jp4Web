@@ -1,0 +1,144 @@
+{% extends 'bio/base.html'   %} 
+
+{% load static %}
+
+<!--content block-->
+{% block content %}
+
+<div style="color: white;">
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+
+    <!-- Resume photo w/link to Linkdn -->
+    <section id="resumephoto">
+        <a href="https://www.linkedin.com/in/james-peterson-iv-8a0816197/">
+            <img src="{% static 'images/798CCE3E-FBDD-48D4-B3F5-B566C473F614.JPG' %}" alt="Resume Picture of James Peterson IV" width="500" height="500">
+        </a>
+    </section>
+    
+    <!-- Table with resume info -->
+    <div id="aboutheader">
+        <table style="width:100%">
+    
+            <tr>
+                <th>
+                    James Peterson IV<br>
+                    <i>Creative minded computer tech, with coding experience</i>
+                </th>
+    
+                <th>
+                    <br>
+                    (931) 249-3996 <br>
+                    james5.peterson@famu.edu
+                </th>
+            </tr>
+    
+            <tr>
+                <td><b>Experience</b></td>
+                <td><b>Skills</b></td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <!-- First unordered list -->
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Fuse</li>
+                        <li>Autodesk Maya</li>
+                        <li>Unity Hub</li>
+                    </ul>
+                </td>
+    
+                <td>Langauges<br>
+                    <ul>
+                        <li>HTML</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                    </ul>
+                </td>
+
+                <td>Frameworks<br>
+                    <ul>
+                        <li>Django</li>
+                    </ul>
+                </td>
+            </tr>
+    
+            <tr>
+                <td><b>Education</b><br><br>
+                    <table>
+                        <tr>
+                            <td>
+                                <b>Florida Agricultural and Mechanical University</b><br>
+                                CIS major & Fine Arts minor<br>
+                                Alumni<br>
+                            </td>
+    
+                            <td></td>
+                            <td></td>
+    
+                            <td>
+                                <b>Tallahassee Community College</b><br>
+                                Class of 2019<br>
+                                AA Degree<br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+    
+                <td>Artist<br>
+                    <ul>
+                        <li>Drawing/Sketching</li>
+                        <li>Mixed Media</li>
+                    </ul>
+                </td>
+            </tr>
+    
+            <tr>
+                <td></td>
+                <td><b>Awards</b><br>
+                    <ul>
+                        <li>Honor Roll 3x</li>
+                        <li>Dean's List 2x</li>
+                        <li>AKM Honor Society Member</li>
+                        <li>Magnum Cum Laude</li>
+                    </ul>
+                </td>
+            </tr>
+    
+        </table>
+    </div>
+    
+    <div id="aboutbody">
+        <!-- Heading h4 used to match sizing -->
+        <h4>Leadership Experience</h4>
+    
+        <!-- Three paragraphs using p -->
+        <p>
+            Co-captain of high school wrestling
+            team for two years. Senior year three
+            of my guys made state,including me.
+        </p>
+    
+        <p>
+            While working for Petco, I was given the
+            task of training employees, currently I
+            have trained six. Some of them made it to
+            manager positions, others I hear are getting
+            paid better elsewhere.
+        </p>
+    
+        <p>Vice-President of FAMU's ACM Club</p>
+    
+    
+    </div>
+
+</div>
+<!--endblock content-->
+{% endblock content %}

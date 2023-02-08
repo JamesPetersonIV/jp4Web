@@ -1,0 +1,17 @@
+{% extends 'bio/base.html'   %} 
+
+{% load static %}
+
+<!--content block-->
+{% block content %}
+<div class="container">
+    <div class = "row">
+            <h1 style="color: white;">{{ lit.title }}</h1>
+            <embed src="{{lit.pdf.url}}" 
+                width="100000" 
+                height="1600"> 
+    </div>
+</div>
+
+<!--endblock content-->
+{% endblock content %}

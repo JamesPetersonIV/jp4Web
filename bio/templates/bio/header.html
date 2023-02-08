@@ -1,0 +1,43 @@
+{% load static %}
+
+<div>
+    <img src="{% static 'images/art-water.gif' %}" class="d-block w-100" alt="..." height="500px">
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark" style="background-color: black;">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="shadow" src="{% static 'images/MyLogo2.png' %}" width="70" height="70" class="d-inline-block align-top" alt="">
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">James Peterson IV</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'artpf' %}">Art Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'tdcpf' %}">3D Modeling Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'library' %}">Library</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <hr style="color: white;">
+</div>

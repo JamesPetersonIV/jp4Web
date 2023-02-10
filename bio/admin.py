@@ -12,3 +12,8 @@ class ArtworkAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug':('name',)}
 
 admin.site.register(Artwork, ArtworkAdmin)
+
+class VisAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug':('video',)}
+
+admin.site.register(Vis, VisAdmin)

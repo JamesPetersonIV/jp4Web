@@ -1,0 +1,18 @@
+{% extends 'bio/base.html'   %} 
+
+{% load static %}
+
+<!--content block-->
+{% block content %}
+
+<div class="container-fluid">
+
+        {% for vid in vids %}
+        <video width="685" height="560" controls preload="auto" muted="true" data-setup="{}">
+        <source src="{{vid.file.url}}">
+        </video>
+        {% endfor %}
+</div>
+
+<!--endblock content-->
+{% endblock content %}

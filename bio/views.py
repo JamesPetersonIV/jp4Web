@@ -70,3 +70,10 @@ class Info(View):
         context={'info':info,}
 
         return render(request, 'bio/info.html', context)
+
+class Videos(View):
+    def get(self, request, *args, **kwargs):
+        vids=Vis.objects.all()
+        context={'vids':vids,}
+
+        return render(request, 'bio/videos.html', context)

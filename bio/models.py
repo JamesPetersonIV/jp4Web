@@ -43,3 +43,16 @@ class Artwork(models.Model):
         verbose_name_plural = 'Works of Art'
     def __str__(self):
         return self.name
+
+
+class Vis(models.Model):
+    
+    video = models.TextField(max_length=100)
+    file = models.FileField(upload_to="vids", blank = True, null=True)
+    thumbnail = models.ImageField(upload_to="thumbnails", blank=True, null=True)
+    slug = models.SlugField(max_length=50)
+
+    class Meta:
+        verbose_name_plural = 'Visuals'
+    def __str__(self):
+        return self.video

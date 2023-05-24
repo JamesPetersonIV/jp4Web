@@ -1,5 +1,7 @@
 {% extends 'bio/base.html'   %} 
 
+{% load embed_video_tags %}
+
 {% load static %}
 
 <!--content block-->
@@ -7,10 +9,9 @@
 
 <div class="container-fluid">
 
+        
         {% for vid in vids %}
-        <video width="685" height="560" controls preload="auto" muted="true" data-setup="{}">
-        <source src="{{vid.file.url}}">
-        </video>
+                {% video vid.url 'large' %}
         {% endfor %}
 </div>
 

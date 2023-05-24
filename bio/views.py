@@ -73,7 +73,7 @@ class Info(View):
 
 class Videos(View):
     def get(self, request, *args, **kwargs):
-        vids=Vis.objects.all()
+        vids=Visual.objects.all()
         context={'vids':vids,}
 
         return render(request, 'bio/videos.html', context)

@@ -1,5 +1,8 @@
 from django.db import models
 
+#Embeds
+from embed_video.fields import EmbedVideoField
+
 # Create your models here.
 class Literature(models.Model):
     #category
@@ -45,11 +48,10 @@ class Artwork(models.Model):
         return self.name
 
 
-class Vis(models.Model):
+class Visual(models.Model):
     
-    video = models.TextField(max_length=100)
-    file = models.FileField(upload_to="vids", blank = True, null=True)
-    thumbnail = models.ImageField(upload_to="thumbnails", blank=True, null=True)
+    video = models.CharField(max_length=100)
+    url = EmbedVideoField()
     slug = models.SlugField(max_length=50)
 
     class Meta:

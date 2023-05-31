@@ -51,10 +51,11 @@ class Artwork(models.Model):
 class Visual(models.Model):
     
     video = models.CharField(max_length=100)
-    url = EmbedVideoField()
+    link = EmbedVideoField()
     slug = models.SlugField(max_length=50)
 
     class Meta:
         verbose_name_plural = 'Visuals'
     def __str__(self):
         return self.video
+    

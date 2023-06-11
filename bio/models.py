@@ -9,6 +9,8 @@ class Literature(models.Model):
     CATEGORY = (
         ('Novel', 'Novel'),
         ('Comic Book', 'Comic Book'),
+        ('Magazine', 'Magazine'),
+        ('Flyer', 'Flyer'),
     ) 
     title = models.CharField(max_length=100)
     img = models.ImageField(upload_to="images", blank=True, null=True)

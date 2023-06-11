@@ -41,5 +41,43 @@
     {% endfor %}
     </div>
 </div>
+
+<div class = "container-fluid" style="color: white;">
+    <div class = "row">
+        <h1><b>MAGAZINES</b></h1>
+    </div>
+    <div class = "row">
+    {% for m in magazines %}
+        <div class = "col-6">
+            <a href = "{% url 'read' m.pk %}">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ m.img.url }}" height="400in" width="400in">
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+<div class = "container-fluid" style="color: white;">
+    <div class = "row">
+        <h1><b>Flyers</b></h1>
+    </div>
+    <div class = "row">
+    {% for f in flyers %}
+        <div class = "col-6">
+            <a href = "{% url 'read' f.pk %}">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ f.img.url }}" height="400in" width="400in">
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+</div>
 <!--endblock content-->
 {% endblock content %}

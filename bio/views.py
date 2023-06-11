@@ -47,10 +47,14 @@ class Library(View):
 
         novels = Literature.objects.filter(category__contains='Novel')
         comics = Literature.objects.filter(category__contains='Comic Book')
+        magazines = Literature.objects.filter(category__contains='Magazine')
+        flyers = Literature.objects.filter(category__contains='Flyer')
 
         context = {
             'novels' : novels, 
             'comics' : comics,
+            'magazines' : magazines,
+            'flyers' : flyers,
         }
 
         return render(request, 'bio/library.html', context)

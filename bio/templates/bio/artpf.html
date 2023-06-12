@@ -186,11 +186,14 @@
 <div class = "container-fluid">
     <div class = "row">
     {% for a in art %}
-        <div class = "col">
+        <div class = "piccover col">
             <a href = "{% url 'info' a.pk %}">
                 <div>
-                    <div class="uk-card uk-card-default uk-card-body">
+                    <div class="pic uk-card uk-card-default uk-card-body">
                         <img src="{{ a.img.url }}" height="300in" width="300in">
+                    </div>
+                    <div class="overlay text-center">
+                        <h4>{{ a.name }}</h4>
                     </div>
                 </div>
             </a>

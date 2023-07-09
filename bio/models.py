@@ -61,3 +61,4 @@ class Visual(models.Model):
     def __str__(self):
         return self.video
     
+

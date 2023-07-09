@@ -81,6 +81,3 @@ class Videos(View):
         context={'vids':vids,}
 
         return render(request, 'bio/videos.html', context)
-
-
-        

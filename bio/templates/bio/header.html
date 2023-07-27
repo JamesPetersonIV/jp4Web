@@ -6,10 +6,10 @@
     <!-- Image and text -->
     <nav class="navbar navbar-dark">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{% url 'home' %}">
             <img class="shadow" src="{% static 'images/MyLogo2.png' %}" width="70" height="70" class="d-inline-block align-top" alt="">
         </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" style="border-color: white;">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" >
@@ -20,22 +20,22 @@
               <div class="offcanvas-body shadow" style="background-color: black;">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}"> <i class="bi bi-house-fill"></i> Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'artpf' %}">Art Portfolio</a>
+                    <a class="nav-link active" href="{% url 'artpf' %}"> <i class="bi bi-palette-fill"></i> Art Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'tdcpf' %}">3D Modeling Portfolio</a>
+                    <a class="nav-link active" href="{% url 'tdcpf' %}"> <i class="bi bi-badge-3d-fill"></i> 3D Modeling Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'library' %}">Library</a>
+                    <a class="nav-link active" href="{% url 'library' %}"> <i class="bi bi-book-fill"></i> Library</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'videos' %}">Video Uploads</a>
+                    <a class="nav-link active" href="{% url 'videos' %}"> <i class="bi bi-display"></i> Video Uploads</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about' %}">About Me</a>
+                    <a class="nav-link active" href="{% url 'about' %}"> <i class="bi bi-person-fill"></i> About Me</a>
                   </li>
                 </ul>
               </div>

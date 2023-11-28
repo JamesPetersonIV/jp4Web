@@ -9,13 +9,13 @@
     <a href="{% url 'artpf' %}"><button type="button" class="btn btn-outline-light"><h3> <i class="bi bi-arrow-left"></i></h3></button></a>
 </div>
 <div class="container">
-    <div class = "row">
-            <figure class="figure text-center">
+    <div class = "row" style="color: white;">
+            <figure class="figure text-center" >
                 <img src="{{info.img.url}}" class="figure-img img-fluid rounded" alt="...">
                 <blockquote class="blockquote">
                     <p>{{ info.name }}</p>
                 </blockquote>
-                <figcaption class="blockquote-footer">
+                <figcaption class="blockquote-footer" style="color: white;">
                     {{info.entry}}; <cite title="Source Title">{{info.summary}}</cite>
                 </figcaption>
             </figure>

@@ -8,8 +8,10 @@ Django==5.1.2
 django-allauth==65.1.0
 django-crispy-forms==2.3
 django-embed-video==1.4.10
+gunicorn==23.0.0
 idna==3.10
 oauthlib==3.2.2
+packaging==24.1
 pillow==11.0.0
 pycparser==2.22
 PyJWT==2.9.0

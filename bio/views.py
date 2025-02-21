@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from django.db.models import Q
 #For models queries
 from .models import *
 #from .models import Literature
@@ -9,26 +10,15 @@ class ArtPortfolio(View):
     def get(self, request, *args, **kwargs):
 
         art = Artwork.objects.all()
-        sps = Artwork.objects.filter(entry__contains='Self-Portraits')
-        chs = Artwork.objects.filter(entry__contains='Characters')
-        sks = Artwork.objects.filter(entry__contains='Sketches')
-        mms = Artwork.objects.filter(entry__contains='Mixed-Media')
-        has = Artwork.objects.filter(entry__contains='Hatching')
-        pos = Artwork.objects.filter(entry__contains='Portraits')
-        ips = Artwork.objects.filter(entry__contains='Imagined Portaits')
 
         context = {
             'art':art,
-            'sps':sps,
-            'chs':chs,
-            'sks':sks,
-            'mms':mms,
-            'has':has,
-            'pos':pos,
-            'ips':ips,
         }
 
         return render(request, 'bio/artpf.html', context)
+    
+#02/21/25
+
 
 class AutoBio(View):
     def get(self, request, *args, **kwargs):

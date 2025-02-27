@@ -21,25 +21,53 @@
               <div class="offcanvas-body shadow" style="background-color: black;">
                 <ul  class="navbar-nav justify-content-end flex-grow-1 pe-3" style="font-size:30px;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}"> <i class="bi bi-house-fill"></i> Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">
+                      <button type="button" class="btn btn-outline-light">
+                        <i class="bi bi-house-fill"></i> Home
+                      </button>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'artpf' %}"> <i class="bi bi-palette-fill"></i> Art Portfolio</a>
+                    <a class="nav-link active" href="{% url 'artpf' %}"> 
+                      <button type="button" class="btn btn-outline-light">
+                        <i class="bi bi-palette-fill"></i> Art Portfolio
+                      </button>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'tdcpf' %}"> <i class="bi bi-badge-3d-fill"></i> 3D Modeling Portfolio</a>
+                    <a class="nav-link active" href="{% url 'tdcpf' %}"> 
+                      <button type="button" class="btn btn-outline-light">
+                        <i class="bi bi-badge-3d-fill"></i> 3D Modeling Portfolio
+                      </button>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'library' %}"> <i class="bi bi-book-fill"></i> Library</a>
+                    <a class="nav-link active" href="{% url 'library' %}">
+                      <button type="button" class="btn btn-outline-light">
+                        <i class="bi bi-book-fill"></i> Library
+                      </button>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'videos' %}"> <i class="bi bi-display"></i> Video Uploads</a>
+                    <a class="nav-link active" href="{% url 'videos' %}"> 
+                      <button type="button" class="btn btn-outline-light">  
+                        <i class="bi bi-display"></i> Video Uploads
+                      </button>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'about' %}"> <i class="bi bi-person-fill"></i> About Me</a>
+                    <a class="nav-link active" href="{% url 'about' %}"> 
+                      <button type="button" class="btn btn-outline-light">
+                        <i class="bi bi-person-fill"></i> About Me
+                      </button>
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a style="color: white; position: relative; right: 5%; text-decoration: none;" href="http://jamespeterson.inteletravel.com/"> <img style="color: white; position: relative; left: 2%;" src="{% static 'images/InteleTravel.png' %}" width="50" height="50"> Book! w/ Jay Can Plan <p style="text-align:left; text-indent: 17%;">Your Day</p> </a>
+                    <a class="nav-link active" style="color: white; right: 5%; text-decoration: none;" href="http://jamespeterson.inteletravel.com/">
+                      <button type="button" class="btn btn-outline-light">
+                       <img style="color: white; left: 2%;" src="{% static 'images/InteleTravel.png' %}" width="50" height="50"> Book! w/ Jay Can Plan Your Day
+                      </button> 
+                    </a>
                   </li>
                 </ul>
               </div>

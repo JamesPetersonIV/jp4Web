@@ -13,7 +13,7 @@
         {% for a in art %}
             <div class="col-md-4 col-sm-12 text-center mb-5">
                 <a href="{% url 'info' a.pk %}" style="text-decoration: none;">
-                    <div class="d-flex flex-row align-items-center">
+                    <div class="d-flex flex-row align-items-center btn btn-outline-light">
                         <img src="{{ a.img.url }}" height="300" width="350" class="mr-3">
                         <div class="text-left">
                             <h4 class="mt-3" style="color: white;"><i>{{ a.name }}</i></h4>
@@ -22,7 +22,7 @@
                 </a>
             </div>
             {% if forloop.counter|divisibleby:3 and not forloop.last %}
-                <div class="row justify-content-center"></div> <!-- Start a new row after every 2 items -->
+                <div class="row justify-content-center"></div> <!-- Start a new row after every 3 items -->
             {% endif %}
         {% endfor %}
     </div>

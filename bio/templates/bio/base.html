@@ -9,7 +9,90 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
         <style>
-          
+            .scroll-container {
+                overflow-x: auto;
+                white-space: nowrap;
+                scroll-snap-type: x mandatory;
+                display: flex; /* Ensure the cards are aligned in a row */
+                gap: 10px; /* Space between cards */
+            }
+
+            .scroll-container::-webkit-scrollbar {
+                height: 12px;
+            }
+
+            .scroll-container::-webkit-scrollbar-thumb {
+                background: black;
+                border-radius: 6px;
+            }
+
+            .scroll-container::-webkit-scrollbar-track {
+                background: #edf2f4;
+                border-radius: 6px;
+            }
+
+            .card {
+                flex: 0 0 auto; /* Ensure cards do not shrink */
+                width: 550px; /* You can adjust the width if needed */
+                scroll-snap-align: start;
+                transition: all 0.2s;
+                word-wrap: break-word;
+                overflow: hidden;
+                min-height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .card:hover {
+                background: black;
+                color: white;
+                border-color: white;
+            }
+
+            .card a {
+                text-decoration: none;
+                color: white;
+                background: black;
+                padding: 6px 12px;
+                border-radius: 8px;
+                transition: background 0.2s;
+                align-self: start;
+            }
+
+            .card:hover a {
+                background: white;
+                color: black;
+            }
+
+            .card-text {
+                flex-grow: 1;
+                overflow: visible;
+                text-overflow: auto;
+                white-space: pre-line; /* Preserves line breaks and wraps text */
+            }
+
+            /*About Me*/
+            .cards {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            }
+
+            .card-contents {
+                padding: 15px;
+            }
+
+            .nav-logo { 
+                color: black; 
+            }
+            .nav-logo:hover {
+                color: white;
+                border: solid white;
+            }
 
         </style>
         <title>JP4</title>
@@ -22,6 +105,6 @@
         {% include 'bio/footer.html' %}
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

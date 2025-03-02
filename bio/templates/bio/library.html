@@ -2,82 +2,80 @@
 
 {% load static %}
 
+
 <!--content block-->
 {% block content %}
-<div class = "container-fluid" style="color: white;">
-    <div class = "row">
-        <h1><b>NOVELS</b></h1>
-    </div>
-    <div class = "row">
-    {% for n in novels %}
-        <div class = "col-6">
-            <a href = "{% url 'read' n.pk %}">
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img src="{{ n.img.url }}" height="400in" width="400in">
-                    </div>
-                </div>
-            </a>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="container my-5">
+            <h2 class="mb-4" style="color: white;">NOVELS</h2>
+            <div class="scroll-container p-3">
+                {% for n in novels %}
+                        <div class="card p-3 shadow-sm">
+                            <h5 class="card-title">{{n.title}}</h5>
+                            <p class="card-text">{{n.summary}}</p>
+                            <img class="mb-4" src="{{ n.img.url }}" height="350" width="350">
+                            <a href="{% url 'read' n.pk %}" class="btn">Open</a>
+                        </div>
+                {% endfor %}
+            </div> <!-- close scroll-container -->
         </div>
-    {% endfor %}
     </div>
 </div>
 
-<div class = "container-fluid" style="color: white;">
-    <div class = "row">
-        <h1><b>COMIC BOOKS</b></h1>
-    </div>
-    <div class = "row">
-    {% for c in comics %}
-        <div class = "col-6">
-            <a href = "{% url 'read' c.pk %}">
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img src="{{ c.img.url }}" height="400in" width="400in">
-                    </div>
-                </div>
-            </a>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="container my-5">
+            <h2 class="mb-4" style="color: white;">COMIC BOOKS</h2>
+            <div class="scroll-container p-3">
+                {% for c in comics %}
+                        <div class="card p-3 shadow-sm">
+                            <h5 class="card-title">{{c.title}}</h5>
+                            <p class="card-text">{{c.summary}}</p>
+                            <img class="mb-4" src="{{ c.img.url }}" height="350" width="350">
+                            <a href="{% url 'read' c.pk %}" class="btn">Open</a>
+                        </div>
+                {% endfor %}
+            </div> <!-- close scroll-container -->
         </div>
-    {% endfor %}
     </div>
 </div>
 
-<div class = "container-fluid" style="color: white;">
-    <div class = "row">
-        <h1><b>MAGAZINES</b></h1>
-    </div>
-    <div class = "row">
-    {% for m in magazines %}
-        <div class = "col-6">
-            <a href = "{% url 'read' m.pk %}">
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img src="{{ m.img.url }}" height="400in" width="400in">
-                    </div>
-                </div>
-            </a>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="container my-5">
+            <h2 class="mb-4" style="color: white;">MAGAZINES</h2>
+            <div class="scroll-container p-3">
+                {% for m in magazines %}
+                        <div class="card p-3 shadow-sm">
+                            <h5 class="card-title">{{m.title}}</h5>
+                            <p class="card-text">{{m.summary}}</p>
+                            <img class="mb-4" src="{{ m.img.url }}" height="350" width="350">
+                            <a href="{% url 'read' m.pk %}" class="btn">Open</a>
+                        </div>
+                {% endfor %}
+            </div> <!-- close scroll-container -->
         </div>
-    {% endfor %}
     </div>
 </div>
 
-<div class = "container-fluid" style="color: white;">
-    <div class = "row">
-        <h1><b>Flyers</b></h1>
-    </div>
-    <div class = "row">
-    {% for f in flyers %}
-        <div class = "col-6">
-            <a href = "{% url 'read' f.pk %}">
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img src="{{ f.img.url }}" height="400in" width="400in">
-                    </div>
-                </div>
-            </a>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="container my-5">
+            <h2 class="mb-4" style="color: white;">Flyers</h2>
+            <div class="scroll-container p-3">
+                {% for f in flyers %}
+                        <div class="card p-3 shadow-sm">
+                            <h5 class="card-title">{{f.title}}</h5>
+                            <p class="card-text">{{f.summary}}</p>
+                            <img class="mb-4" src="{{ f.img.url }}" height="350" width="350">
+                            <a href="{% url 'read' f.pk %}" class="btn">Open</a>
+                        </div>
+                {% endfor %}
+            </div> <!-- close scroll-container -->
         </div>
-    {% endfor %}
     </div>
 </div>
+
 <!--endblock content-->
 {% endblock content %}

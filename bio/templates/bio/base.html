@@ -52,8 +52,8 @@
 
             .card a {
                 text-decoration: none;
-                color: white;
-                background: black;
+                color: black;
+                background: grey;
                 padding: 6px 12px;
                 border-radius: 8px;
                 transition: background 0.2s;
@@ -86,12 +86,29 @@
                 padding: 15px;
             }
 
-            .nav-logo { 
-                color: black; 
+            /*nav logo*/
+            .box-shadow-hover {
+                box-shadow: none; 
+                transition: box-shadow 0.2s;
             }
-            .nav-logo:hover {
-                color: white;
-                border: solid white;
+.box-shadow-hover:hover {
+                box-shadow: 0 0 10px white;
+            }
+
+            /* Default image rules (for XS <576px and LG ≥992px) */
+            #mylogo {
+                width: 350px; /* or any fixed width you like */
+                height: 300px; /* or any fixed height you like */
+                /* Or you can leave it unstyled if you prefer */
+            }
+
+            /* Override for small and medium devices only: 576px – 991.98px */
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                #mylogo {
+                    /* On sm + md screens, make it responsive */
+                    max-width: 100%;
+                    height: auto;
+                }
             }
 
         </style>

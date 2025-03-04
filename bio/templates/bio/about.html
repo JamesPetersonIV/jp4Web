@@ -5,294 +5,306 @@
 <!--content block-->
 {% block content %}
 
-<div>
-    <div>
-        <div class="resume header">
-            <div class="cards" style="text-align: center; margin: 20px 0; max-width: 100%; height: auto;">
-                <img src="{% static 'images/798CCE3E-FBDD-48D4-B3F5-B566C473F614.JPG' %}" alt="Resume Picture of James Peterson IV">
-                <div class="card-contents">
-                    <table style="display: flex; flex-direction: column; align-items: center;">
-                        <tr>
-                            <th style="text-align: center; font-size: 150px;">
-                                James Peterson IV
-                            </th>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center; font-size: 15px;">
-                                Tallahassee, FL | (931) 249-3996 | peterson4james@gmail.com | www.linkedin.com/in/james-peterson-iv-8a0816197 | www.github.com/JamesPetersonIV | https://jp4web-production.up.railway.app
-                            </td>
-                        </tr>
-                    </table>
+<ul class="stack-cards js-stack-cards" style="padding:0; margin:0; list-style:none; margin-bottom: 20vh;">
+    <!-- Resume Header Card -->
+    <li class="cards stack-cards__item js-stack-cards__item" style="text-align: center; margin: 20px 0; max-width: 100%; height: auto;">
+        <div class="card-contents">
+            <img style="height: 450px; width: 590px;" src="{% static 'images/798CCE3E-FBDD-48D4-B3F5-B566C473F614.JPG' %}" alt="Resume Picture of James Peterson IV">
+        
+            <table style="display: flex; flex-direction: column; align-items: center;">
+                <tr>
+                    <th style="text-align: center; font-size: 150px;">
+                        James Peterson IV
+                    </th>
+                </tr>
+                <tr>
+                    <td style="text-align: center; font-size: 15px;">
+                        Tallahassee, FL | (931) 249-3996 | peterson4james@gmail.com | www.linkedin.com/in/james-peterson-iv-8a0816197 | www.github.com/JamesPetersonIV | https://jp4web-production.up.railway.app
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </li>
+  
+    <!-- Education Card -->
+    <li class="cards stack-cards__item js-stack-cards__item">
+        <div class="card-contents">
+            <div class="row">
+                <p style="font-size: 50px;"><b>Education</b></p>
+                <div class="col" style="font-size: 45px;">
+                    Florida Agricultural & Mechanical University, Tallahassee, FL<br>
+                    Bachelor of Science, College of Science & Technology<br>
+                    Concentration: <b>Computer Information Systems</b><br>
+                    Minor: <b>Fine Arts</b><br>
+                    Class of 2022
+                </div>
+                <div class="col" style="font-size: 45px; text-align: right;">
+                    Tallahassee Community College<br>
+                    AA Degree<br>
+                    Class of 2019<br>
                 </div>
             </div>
         </div>
-
-        <div class="cards">
-            <div class="card-contents">
-                    <div class="row">
-                        <p style="font-size: 50px;"><b>Education</b></p>
-
-                        <div class="col" style="font-size: 45px;">
-                            Florida Agricultural & Mechanical University, Tallahassee, FL
-                            Bachelor of Science, College of Science & Technology<br>
-                            Concentration: <b>Computer Information Systems</b><br>
-                            Minor: <b>Fine Arts</b><br>
-                            Class of 2022
-                        </div>
-                        <div class="col" style="font-size: 45px; text-align: right;">
-                                Tallahassee Community College<br>
-                                AA Degree<br>
-                                Class of 2019<br>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <div class="cards">
-            <div class="card-contents">
-                <div class="row" style="font-size: 45px;">
-                    <p style="font-size: 50px;">
-                        <b>Technical Skills</b>
-                    </p>
-                    <div class="col">
-                        <p>Tools & Platforms</p>
-                                <!-- First unordered list -->
-                        <ul>
-                            <li>Adobe Photoshop </li>
-                            <li>Adobe Illustrator</li>
-                            <li>Adobe Fuse</li>
-                            <li>Autodesk Maya</li>
-                            <li>Unity Hub</li>
-                            <li>Autodesk Mudbox</li>
-                            <li>Unreal Engine</li>
-                            <li>Microsoft Office</li>
-                        </ul>
-                    </div>
-            
-                    <div class="col">
-                        <p>Languages</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>C++</li>
-                            <li>C#</li>
-                            <li>Python</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <p>Frameworks</p>
-                        <ul>
-                            <li>Django</li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <p>Networking</p>
-                        <ul>
-                            <li>LAN</li>
-                            <li>Ethernet</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="cards" style="font-size: 40px;">
-            <div class="card-contents">
+    </li>
+  
+    <!-- Technical Skills Card -->
+    <li class="cards stack-cards__item js-stack-cards__item">
+        <div class="card-contents">
+            <div class="row" style="font-size: 45px;">
+                <p style="font-size: 50px;"><b>Technical Skills</b></p>
                 <div class="col">
-                    <b><p>Project Experience</p></b>
-                    <div class="row text-center" style="width:100vw;">
-                        <div class="col">
-                            April 23, 2022
-                        </div>
-                        <div class="col">
-                            PC Build 
-                        </div>
-                        <div class="col">
-                            Tallahassee, FL
-                        </div>
-
-                        <div class="row" style="width:100vw;">
-                            <p>
-                                Built a PC for Game development/design <br>
-                                ⧫ Intel Core i7-9700K⧫MPG Z390 Gaming Edge AC⧫Cool Master Hyper 212⧫RTX 3080 Suprim X 10G⧫Crucial RAM 32GB⧫Crucial P2 1TB⧫Seasonic S12III 650
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row text-center" style="width:100vw;">
-                        <div class="col">
-                            December 3, 2022
-                        </div>
-                        <div class="col">
-                            GameBagged Web App 
-                        </div>
-                        <div class="col">
-                            Tallahassee, FL
-                        </div>
-
-                        <div class="row" style="width:100vw;">
-                            <p>
-                                Produced a web app using python and Django framework <br>
-                                ⧫ Includes status updates, chat function, page restrictions, and authentication
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="row text-center" style="width:100vw;">
-                        <div class="col">
-                            February 9, 2023
-                        </div>
-                        <div class="col">
-                            Personal Website  
-                        </div>
-                        <div class="col">
-                            Tallahassee, FL
-                        </div>
-                    
-                        <div class="row" style="width:100vw;">
-                            <p>
-                                Created a personal website to display my portfolio <br>
-                                ⧫ Bootstrap ⧫ HTML/CSS ⧫ JavaScript ⧫ Links • Django ⧫ Video embeds ⧫ Railway ⧫ GitHub
-                            </p>
-                        </div>
-                    </div>
+                    <p>Tools & Platforms</p>
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Fuse</li>
+                        <li>Autodesk Maya</li>
+                        <li>Unity Hub</li>
+                        <li>Autodesk Mudbox</li>
+                        <li>Unreal Engine</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Languages</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Frameworks</p>
+                    <ul>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>Networking</p>
+                    <ul>
+                        <li>LAN</li>
+                        <li>Ethernet</li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-        <div class="cards" style="font-size: 35px;">
-            <div class="card-contents">
-
-                <div class="col">
-                    <p><b>Work Experience</b></p>
-
-                    <div class="row text-center" style="width:100vw;">
-                        <div class="col">
-                            Pyramid Inc.
-                        </div>
-                        <div class="col">
-                            Computer Instructor  
-                        </div>
-                        <div class="col">
-                            Tallahassee, FL
-                        </div>
-
-                        <div class="row" style="width:100vw;">
-                            <p>
-                                Computer instructor for young adults with developmental disabilities <br>
-                                ⧫ Designs and teaches various computer courses for senior adults ⧫ Prepares the room and the computers for use before each class; attends to the proper 
-                                shut-down of computers after classes  ⧫ Assures that the computer equipment is properly used ⧫ Supervises use of computer equipment during lab hours
-                                ⧫ Update and install software ⧫ Troubleshoot, repair, and/or set-up hardware
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row text-center" style="width:100vw;">
-                        <div class="col">
-                            Rhino Sports
-                        </div>
-                        <div class="col">
-                            Event Staff 
-                        </div>
-                        <div class="col">
-                            Tallahassee, FL
-                        </div>
-
-                        <div class="row" style="width:100vw;">
+    </li>
+  
+    <!-- Project Experience Card -->
+    <li class="cards stack-cards__item js-stack-cards__item" style="font-size: 40px;">
+        <div class="card-contents">
+            <div class="col">
+                <b><p>Project Experience</p></b>
+                <div class="row text-center" style="width:100vw;">
+                    <div class="col">April 23, 2022</div>
+                    <div class="col">PC Build</div>
+                    <div class="col">Tallahassee, FL</div>
+                    <div class="row" style="width:100vw;">
                         <p>
-                            Patrol and provide customer service <br>
+                            Built a PC for Game development/design<br>
+                            ⧫ Intel Core i7-9700K ⧫ MPG Z390 Gaming Edge AC ⧫ Cool Master Hyper 212 ⧫ RTX 3080 Suprim X 10G ⧫ Crucial RAM 32GB ⧫ Crucial P2 1TB ⧫ Seasonic S12III 650
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center" style="width:100vw;">
+                    <div class="col">December 3, 2022</div>
+                    <div class="col">GameBagged Web App</div>
+                    <div class="col">Tallahassee, FL</div>
+                    <div class="row" style="width:100vw;">
+                        <p>
+                            Produced a web app using Python and Django framework<br>
+                            ⧫ Includes status updates, chat function, page restrictions, and authentication
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center" style="width:100vw;">
+                    <div class="col">February 9, 2023</div>
+                    <div class="col">Personal Website</div>
+                    <div class="col">Tallahassee, FL</div>
+                    <div class="row" style="width:100vw;">
+                        <p>
+                            Created a personal website to display my portfolio<br>
+                            ⧫ Bootstrap ⧫ HTML/CSS ⧫ JavaScript ⧫ Links ⧫ Django ⧫ Video embeds ⧫ Railway ⧫ GitHub
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+  
+    <!-- Work Experience Card -->
+    <li class="cards stack-cards__item js-stack-cards__item" style="font-size: 35px;">
+        <div class="card-contents">
+            <div class="col">
+                <p><b>Work Experience</b></p>
+                <div class="row text-center" style="width:100vw;">
+                    <div class="col">Pyramid Inc.</div>
+                    <div class="col">Computer Instructor</div>
+                    <div class="col">Tallahassee, FL</div>
+                    <div class="row" style="width:100vw;">
+                        <p>
+                            Computer instructor for young adults with developmental disabilities<br>
+                            ⧫ Designs and teaches various computer courses for senior adults ⧫ Prepares the room and computers before class ⧫ Ensures proper shutdown and usage ⧫ Supervises lab hours, updates software, and troubleshoots hardware
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center" style="width:100vw;">
+                    <div class="col">Rhino Sports</div>
+                    <div class="col">Event Staff</div>
+                    <div class="col">Tallahassee, FL</div>
+                    <div class="row" style="width:100vw;">
+                        <p>
+                            Patrol and provide customer service<br>
                             ⧫ Greet and assist attendees ⧫ Patrol and secure areas
                         </p>
-                        </div>
                     </div>
-                    
-                    <div class="row text-center" style="width:100vw;">
-                        <div class="col">
-                            Petco
-                        </div>
-                        <div class="col">
-                            Guest Specialist  
-                        </div>
-                        <div class="col">
-                            Tallahassee, FL
-                        </div>
-
-                        <div class="row" style="width:100vw;">
-                            <p>
-                                Greet, assist and make sales to customers <br>
-                                ⧫ Train new employees ⧫ Order fish, educate customers on fish care, and maintain aquatic area
-                            </p>
-                        </div>
+                </div>
+                <div class="row text-center" style="width:100vw;">
+                    <div class="col">Petco</div>
+                    <div class="col">Guest Specialist</div>
+                    <div class="col">Tallahassee, FL</div>
+                    <div class="row" style="width:100vw;">
+                        <p>
+                            Greet, assist and make sales to customers<br>
+                            ⧫ Train new employees ⧫ Order fish, educate customers on care, and maintain aquatic areas
+                        </p>
                     </div>
-
                 </div>
             </div>
         </div>
-
-        <div class="cards" style="font-size: 40px;">
-            <div class="card-contents">
-                <div class="col">
-
-                    <p><b>Client Service Experience</b></p>
-
-                    <div class="row text-center" style="width:100vw;">
-                        <div class="col">
-                            <b>Logo Design</b>, <i>TNT Dynamite Frenchies</i>, Tallahassee, FL
-                        </div>
-                        <div class="col"> 
-                        </div>
-                        <div class="col">
-                            Jan 20, 2021  
-                        </div>
-
-                        <div class="row" style="width:100vw;">
-                            <p>
-                                Designed logo for clients’ dog breeding business. Throughout the process would update clients on design, receive feedback, and make changes where necessary.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row text-center" style="width:100vw;">
-                        <div class="col">
-                            <b>Laptop Troubleshoot</b>, Tallahassee, FL
-                        </div>
-                        <div class="col"> 
-                        </div>
-                        <div class="col">
-                            April 18, 2023  
-                        </div>
-
-                        <div class="row" style="width:100vw;">
-                            <p>
-                                Client found an old laptop and wanted to use it, but was unable because of a lock placed on the laptop. The PC was rebooted, wiped, and updated.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-            <div class="cards">
-                <div class="card-contents">
+    </li>
+  
+    <!-- Client Service Experience Card -->
+    <li class="cards stack-cards__item js-stack-cards__item" style="font-size: 40px;">
+        <div class="card-contents">
+            <div class="col">
+                <p><b>Client Service Experience</b></p>
+                <div class="row text-center" style="width:100vw;">
                     <div class="col">
-                        <p style="font-size: 50px;"><b>Awards</b></p>
-                        <p style="font-size: 45px;">
-                            <b>Dean’s List</b>; Fall 2020, Summer 2021, Fall 2022 ⧫ <b>Honor Roll</b>; Summer  2020, Spring 2021, Fall 2021 ⧫ <b>Magna Cum Laude</b>; Fall 2022
+                        <b>Logo Design</b>, <i>TNT Dynamite Frenchies</i>, Tallahassee, FL
+                    </div>
+                    <div class="col"></div>
+                    <div class="col">Jan 20, 2021</div>
+                    <div class="row" style="width:100vw;">
+                        <p>
+                            Designed a logo for a dog breeding business – updating the client through feedback and revisions.
                         </p>
-                        <p style="font-size: 50px;"><b>Certifications</b></p>
-                        <p style="font-size: 45px;">
-                            Class “D” License ⧫ M320: Data Modeling ⧫ Behavior Analysis for Direct Care Professionals ⧫ APD HIPAA ⧫ APD Zero Tolerance Course
+                    </div>
+                </div>
+                <div class="row text-center" style="width:100vw;">
+                    <div class="col">
+                        <b>Laptop Troubleshoot</b>, Tallahassee, FL
+                    </div>
+                    <div class="col"></div>
+                    <div class="col">April 18, 2023</div>
+                    <div class="row" style="width:100vw;">
+                        <p>
+                            Rebooted, wiped, and updated an old locked laptop to restore functionality.
                         </p>
                     </div>
                 </div>
             </div>
-    </div>
-</div>   
+        </div>
+    </li>
+  
+    <!-- Awards & Certifications Card -->
+    <li class="cards stack-cards__item js-stack-cards__item">
+        <div class="card-contents">
+            <div class="col">
+                <p style="font-size: 50px;"><b>Awards</b></p>
+                <p style="font-size: 45px;">
+                    <b>Dean’s List</b>; Fall 2020, Summer 2021, Fall 2022 ⧫ <b>Honor Roll</b>; Summer 2020, Spring 2021, Fall 2021 ⧫ <b>Magna Cum Laude</b>; Fall 2022
+                </p>
+                <p style="font-size: 50px;"><b>Certifications</b></p>
+                <p style="font-size: 45px;">
+                    Class “D” License ⧫ M320: Data Modeling ⧫ Behavior Analysis for Direct Care Professionals ⧫ APD HIPAA ⧫ APD Zero Tolerance Course
+                </p>
+            </div>
+        </div>
+    </li>
+  </ul>
+  
+  <!-- Inline CSS for Sticky Cards -->
+  <style>
+    .stack-cards__item {
+      position: sticky;
+      top: 0.75em; /* Uses the default spacing from the original snippet */
+      transform-origin: center top;
+    }
+  </style>
+  
+  <!-- JavaScript for the Stacking Effect -->
+  <script>
+    var StackCards = function(element) {
+      this.element = element;
+      this.items = this.element.getElementsByClassName('js-stack-cards__item');
+      this.scrollingListener = false;
+      this.scrolling = false;
+      if(this.items.length > 0) {
+        var firstItemStyle = getComputedStyle(this.items[0]);
+        // Use the CSS 'top' value (or default to ~12px for 0.75em)
+        this.cardTop = parseFloat(firstItemStyle.top) || 12;
+        this.cardHeight = this.items[0].offsetHeight || 0;
+      } else {
+        this.cardTop = 0;
+        this.cardHeight = 0;
+      }
+      this.marginY = 20; // Adjust the gap between cards as needed
+      initStackCardsEffect(this);
+    };
+  
+    function initStackCardsEffect(element) {
+      var observer = new IntersectionObserver(stackCardsCallback.bind(element));
+      observer.observe(element.element);
+    }
+     
+    function stackCardsCallback(entries) {
+      if(entries[0].isIntersecting) {
+        if(this.scrollingListener) return;
+        stackCardsInitEvent(this);
+      } else {
+        if(!this.scrollingListener) return;
+        window.removeEventListener('scroll', this.scrollingListener);
+        this.scrollingListener = false;
+      }
+    }
+     
+    function stackCardsInitEvent(element) {
+      element.scrollingListener = stackCardsScrolling.bind(element);
+      window.addEventListener('scroll', element.scrollingListener);
+    }
+     
+    function stackCardsScrolling() {
+      if(this.scrolling) return;
+      this.scrolling = true;
+      window.requestAnimationFrame(animateStackCards.bind(this));
+    }
+     
+    function animateStackCards() {
+      var top = this.element.getBoundingClientRect().top;
+      for(var i = 0; i < this.items.length; i++) {
+        var scrolling = this.cardTop - top - i * (this.cardHeight + this.marginY);
+        if(scrolling > 0) {
+          this.items[i].style.transform = 'translateY(' + this.marginY * i + 'px) scale(' + (this.cardHeight - scrolling * 0.05) / this.cardHeight + ')';
+        }
+      }
+      this.scrolling = false;
+    }
+  
+    document.addEventListener('DOMContentLoaded', function() {
+      var stackCardsElements = document.getElementsByClassName('js-stack-cards'),
+          intersectionObserverSupported = ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window && 'intersectionRatio' in window.IntersectionObserverEntry.prototype),
+          reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          
+      if(stackCardsElements.length > 0 && intersectionObserverSupported && !reducedMotion) { 
+        for(var i = 0; i < stackCardsElements.length; i++) {
+          new StackCards(stackCardsElements[i]);
+        }
+      }
+    });
+  </script>
 
 
 <!--endblock content-->

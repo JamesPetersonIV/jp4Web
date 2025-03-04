@@ -11,7 +11,7 @@
             <h2 class="mb-4" style="color: white;">NOVELS</h2>
             <div class="scroll-container p-3">
                 {% for n in novels %}
-                        <div class="card p-3 shadow-sm">
+                        <div class="card p-3 shadow-sm" style="background-color: black;">
                             <h5 class="card-title">{{n.title}}</h5>
                             <p class="card-text">{{n.summary}}</p>
                             <img class="mb-4" src="{{ n.img.url }}" height="350" width="350">
@@ -29,7 +29,7 @@
             <h2 class="mb-4" style="color: white;">COMIC BOOKS</h2>
             <div class="scroll-container p-3">
                 {% for c in comics %}
-                        <div class="card p-3 shadow-sm">
+                        <div class="card p-3 shadow-sm" style="background-color: black;">
                             <h5 class="card-title">{{c.title}}</h5>
                             <p class="card-text">{{c.summary}}</p>
                             <img class="mb-4" src="{{ c.img.url }}" height="350" width="350">
@@ -47,7 +47,7 @@
             <h2 class="mb-4" style="color: white;">MAGAZINES</h2>
             <div class="scroll-container p-3">
                 {% for m in magazines %}
-                        <div class="card p-3 shadow-sm">
+                        <div class="card p-3 shadow-sm" style="background-color: black;">
                             <h5 class="card-title">{{m.title}}</h5>
                             <p class="card-text">{{m.summary}}</p>
                             <img class="mb-4" src="{{ m.img.url }}" height="350" width="350">
@@ -65,7 +65,7 @@
             <h2 class="mb-4" style="color: white;">Flyers</h2>
             <div class="scroll-container p-3">
                 {% for f in flyers %}
-                        <div class="card p-3 shadow-sm">
+                        <div class="card p-3 shadow-sm" style="background-color: black;">
                             <h5 class="card-title">{{f.title}}</h5>
                             <p class="card-text">{{f.summary}}</p>
                             <img class="mb-4" src="{{ f.img.url }}" height="350" width="350">

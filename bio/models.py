@@ -11,6 +11,7 @@ class Literature(models.Model):
         ('Comic Book', 'Comic Book'),
         ('Magazine', 'Magazine'),
         ('Flyer', 'Flyer'),
+        ('Essay', 'Essay'),
     ) 
     title = models.CharField(max_length=100)
     img = models.ImageField(upload_to="images", blank=True, null=True)
@@ -18,6 +19,7 @@ class Literature(models.Model):
     #will be able to select from contents in CATEGORY
     category = models.CharField(max_length=200, default=False,blank=True, choices=CATEGORY)
     pdf = models.FileField(upload_to='pdf', blank = True, null=True)
+    published_date = models.DateField(blank=True, null=True)
 
     slug = models.SlugField(max_length=50)
 
@@ -43,7 +45,8 @@ class Artwork(models.Model):
     summary = models.TextField()
     entry = models.CharField(max_length=200, default=False, blank=True, choices=SERIES)
     slug = models.SlugField(max_length=50)
-
+    completed_date = models.DateField(blank=True, null=True)
+    
     class Meta:
         verbose_name_plural = 'Works of Art'
     def __str__(self):

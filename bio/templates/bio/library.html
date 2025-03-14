@@ -8,6 +8,24 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="container my-5">
+            <h2 class="mb-4" style="color: white;">WRITINGS</h2>
+            <div class="scroll-container p-3">
+                {% for e in essays %}
+                        <div class="card p-3 shadow-sm" style="background-color: black;">
+                            <h5 class="card-title">{{e.title}}</h5>
+                            <p class="card-text">{{e.summary}}</p>
+                            
+                            <a href="{% url 'read' e.pk %}" class="btn">Open</a>
+                        </div>
+                {% endfor %}
+            </div> <!-- close scroll-container -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="container my-5">
             <h2 class="mb-4" style="color: white;">NOVELS</h2>
             <div class="scroll-container p-3">
                 {% for n in novels %}

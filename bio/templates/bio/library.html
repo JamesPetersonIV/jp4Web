@@ -12,10 +12,17 @@
             <div class="scroll-container p-3">
                 {% for e in essays %}
                         <div class="card p-3 shadow-sm" style="background-color: black;">
-                            <h5 class="card-title">{{e.title}}</h5>
-                            <p class="card-text">{{e.summary}}</p>
-                            
-                            <a href="{% url 'read' e.pk %}" class="btn">Open</a>
+                            {% if e.img %}
+                                <h5 class="card-title">{{e.title}}</h5>
+                                <p class="card-text">{{e.summary}}</p>
+                                <img class="mb-4" src="{{ e.img.url }}" height="350" width="350">
+                                <a href="{% url 'read' e.pk %}" class="btn">Open</a>
+                            {% else %}
+                                <h5 class="card-title">{{e.title}}</h5>
+                                <p class="card-text">{{e.summary}}</p>
+                                <img class="mb-4" src="{% static 'images/art-water.gif' %}" height="350" width="350">
+                                <a href="{% url 'read' e.pk %}" class="btn">Open</a>
+                            {% endif %}
                         </div>
                 {% endfor %}
             </div> <!-- close scroll-container -->

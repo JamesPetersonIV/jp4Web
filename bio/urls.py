@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
-from bio.views import ArtPortfolio, AutoBio, TDCPortfolio, Library, Read, Info, Home, Videos
+from bio.views import ArtPortfolio, AutoBio, TDCPortfolio, Library, Read, Info, Home, Videos, Demos
 
 
 urlpatterns = [
@@ -12,6 +12,7 @@ urlpatterns = [
     path('', Home.as_view(), name="home"),
     path('library/', Library.as_view(), name='library'),
     path('visuals/', Videos.as_view(), name='videos'),
+    path('demos/', Demos.as_view(), name='demos'),
     #View specific item
     path('library/<int:pk>/', Read.as_view(), name='read'),
     path('artpf/<int:pk>/', Info.as_view(), name='info'),

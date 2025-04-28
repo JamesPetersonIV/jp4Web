@@ -1,0 +1,45 @@
+{% extends 'bio/base.html'   %} 
+
+{% load static %}
+
+<!--content block-->
+{% block content %}
+
+
+<div class="d-flex justify-content-center my-5">
+    <div class="phone-frame position-relative">
+      <img src="{% static 'images/smartphone.png' %}" alt="Phone" class="position-absolute top-0 start-0 w-100 h-100" />
+
+      <div id="carouselExampleIndicators" class="carousel slide game-screen position-absolute">
+        <div class="carousel-indicators" style="bottom: -85px; left: 15%; right: 15%; position: absolute;">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <iframe
+                class="d-block w-100 h-100"
+                src="https://gamebagged4000.vercel.app"
+                allowfullscreen
+                style="border: none;">
+            </iframe>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>GameBagged Demo</h5>
+                <p></p>
+            </div>
+          </div>
+          <!--<div class="carousel-item h-100">
+            <img src="..." class="d-block w-100 h-100" alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="..." class="d-block w-100 h-100" alt="...">
+          </div>-->
+        </div>
+      </div>
+
+    </div>
+</div>
+<!--endblock content-->
+{% endblock content %}

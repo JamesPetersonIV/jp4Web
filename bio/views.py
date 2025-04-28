@@ -73,3 +73,8 @@ class Videos(View):
         context={'vids':vids,}
 
         return render(request, 'bio/videos.html', context)
+    
+#04/27/2025
+class Demos(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'bio/demos.html')

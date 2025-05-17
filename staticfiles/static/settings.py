@@ -181,6 +181,6 @@ ACCOUNT_EMAIL_REQUIRED = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-CSRF_TRUSTED_ORIGINS = ['https://jp4web-production.up.railway.app', 'https://*.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://jp4web-production.up.railway.app', 'https://*.railway.app', 'https://gamebagged4000-production.up.railway.app']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
